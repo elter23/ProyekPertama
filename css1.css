@@ -12,6 +12,7 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100vw;
     height: 100vh;
     background: url("a.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -133,10 +134,4 @@ button:active::after {
 @media (max-width: 480px) {
     button { --btn-h: 44px; font-size: 15px; }
     p, #buttonKlik { font-size: 15px; margin: 12px; }
-
 }
-
-
-
-
-
