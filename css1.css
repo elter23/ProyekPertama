@@ -15,16 +15,16 @@ body::before {
     width: 100vw;
     height: 100vh;
     background: url("a.jpg") no-repeat center center fixed;
-    background-size: 100% auto;
+    background-size: cover;
     filter: blur(5px);
     z-index: -1;
 }
 
-@media (orientation: landscape) {
+@media (max-widt: 768px), (orientation: potrait) {
     body::before {
-    background-size: cover;
+    background-size: contain;
     background-position: center top;
-    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 }
 
@@ -144,5 +144,6 @@ button:active::after {
     p, #buttonKlik { font-size: 15px; margin: 12px; }
 
 }
+
 
 
